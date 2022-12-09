@@ -16,7 +16,7 @@ function setup() {
   background(20);
   noStroke();
 
-  socket = io.connect(`http://localhost:${3001}`);
+  socket = io.connect();
   socket.on("mouse", drawData);
 }
 
